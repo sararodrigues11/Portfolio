@@ -223,7 +223,7 @@ a span.ti-twitter-alt {
 
 
 .footer {
-    background-color: #2a2a2a;
+    background-color: #3B5249;
     margin-top: 30px;
     color: #fff;
     text-align: center;
@@ -235,7 +235,7 @@ a span.ti-twitter-alt {
     display: flex;
 }
 .contact-form {
-    width: 100%; 
+    width: 30%; 
     max-width: 600px; 
     margin: 0 auto;
 }
@@ -274,7 +274,7 @@ ul.footer-menu li a:hover {
 
 
 .contact {
-    background-color: #3a3a3a;
+    background-color: #9CB380;
     color: #fff;
     padding: 1em;
 }
