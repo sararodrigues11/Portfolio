@@ -33,7 +33,7 @@
       <img src="borboleta.png" id="borboleta" class="borboleta" width="50px">
     </div>
     <div class="picture">
-      <img src="cat.jpg" class="cat" width="200px">
+      <img src="sara.jpg" class="sara" width="1000px">
     </div>
   </section>
 
@@ -103,21 +103,27 @@
 
   <!-- Footer Section -->
   <section id="contactos">
-    <h2>Contactos</h2>
-    <p>Envia-me um email!</p>
-    <form action="mailto:sara@example.com" method="post" enctype="text/plain">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" placeholder="Seu nome" required><br>
-      
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Seu email" required><br>
-
-      <label for="message">Mensagem:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br>
-
-      <button type="submit">Enviar</button>
+    <h2>Contact Us</h2>
+    <form>
+        <div class="form-column">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-column">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-column">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-column">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
     </form>
-  </section>
+</section>
 
 </body>
 </html>

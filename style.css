@@ -58,7 +58,6 @@ body {
     color: #fff;
 }
 
-
 /* Header Section */
 .header {
     display: flex;
@@ -89,11 +88,10 @@ body {
     color: #071013;
 }
 
-
 /* Picture styling */
 .picture img {
     border-radius: 15px;
-    width: 50%; 
+    width: 100%; 
     max-width: 1000px;  
     height: auto; 
     padding-right: 50px; 
@@ -175,7 +173,9 @@ body {
 
 #contactos form {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between; /* Distribute the items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap if necessary */
+    gap: 20px; /* Space between columns */
 }
 
 #contactos label {
@@ -190,66 +190,34 @@ body {
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 1rem;
+    width: 100%; /* Ensure inputs take full width of their container */
+}
+
+/* Create 3 equal columns */
+#contactos .form-column {
+    flex: 1;
+    min-width: 30%; /* Each column should take up 30% of the form's width */
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+#contactos textarea {
+    resize: vertical; /* Allow the textarea to resize vertically */
+    height: 100px; /* Set a default height for the textarea */
 }
 
 /* Mobile Styling */
 @media screen and (max-width: 768px) {
-    /* Header Section */
-    .header {
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 20px;
-        text-align: center;  /* Center content on small screens */
+    #contactos form {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        align-items: center; /* Center form items on smaller screens */
     }
 
-    /* Hobbies Section */
-    .hobbies {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;  /* Center the items */
+    #contactos .form-column {
+        min-width: 100%; /* Make each column take full width on smaller screens */
     }
 
-    .hobby {
-        width: 80%;
-    }
-
-    /* Work Section */
-    .work {
-        gap: 15px;
-        align-items: center;  /* Center the work items */
-    }
-
-    .work-item {
-        width: 100%;
-        max-width: 1000px; /* Limit the max width */
-    }
-
-    /* Contact Section */
-    #contactos {
-        padding: 20px;
-        max-width: 100%;
-    }
-
-    /* Adjust the intro section */
-    .intro {
-        text-align: center;  /* Center text for smaller screens */
-        padding-left: 0;
-    }
-
-    /* Adjust font sizes */
-    .header h1 {
-        font-size: 2rem;
-    }
-
-    .header h3 {
-        font-size: 1rem;
-    }
-
-    #Gostos h2 {
-        font-size: 2rem;
-    }
-
-    .hobby h3 {
-        font-size: 1.2rem;
+    #contactos input, #contactos textarea {
+        width: 100%; /* Ensure inputs take full width of their container */
     }
 }
