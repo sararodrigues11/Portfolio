@@ -7,26 +7,26 @@
     box-sizing: border-box;
 }
 
-/* smooth scrolling */
+/* scroll*/
 html {
     scroll-behavior: smooth;
 }
 
 /* -------------------------------
-   Global Styles
+   Fonte
 ---------------------------------- */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #CCD5AE;
-    color: #ffffff; /* Change all text color to white */
+    color: #ffffff; 
     padding-top: 60px; 
     margin: 0;
     overflow-x: hidden;
 }
 
 /* ------------------------------- 
-   Navigation
+   Navegação
 ---------------------------------- */
 .side-menu {
     position: fixed;
@@ -39,7 +39,7 @@ body {
     font-family: 'Parkinsans', sans-serif;
     z-index: 10;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -54,7 +54,7 @@ body {
 
 .side-menu ul li a {
     display: inline-block;
-    color: #000000; /* Change link text to white */
+    color: #000000; 
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -65,11 +65,11 @@ body {
 
 .side-menu ul li a:hover {
     background-color: #FFC0CB;
-    color: #ffffff; /* Keep text white on hover */
+    color: #ffffff; 
 }
 
 /* ------------------------------- 
-   Header 
+   Cabeçalho
 ---------------------------------- */
 .header {
     display: flex;
@@ -79,6 +79,8 @@ body {
     height: 100vh;
     justify-content: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    text-align: center;
 }
 
 .picture {
@@ -168,7 +170,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Gostos Layout */
 .hobbies {
     display: flex;
     flex-wrap: wrap;
@@ -212,13 +213,12 @@ body {
 
 #Trabalhos h2 {
     font-size: 2rem;
-    color: #000000; /* Change title text to white */
+    color: #000000; 
     text-transform: uppercase;
     margin-bottom: 30px;
     font-weight: bold;
 }
 
-/* Work Container */
 .work-container {
     display: flex;
     flex-wrap: wrap;
@@ -229,7 +229,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Work Box */
 .work-box {
     background-color: #a1bbd0;
     padding: 30px; 
@@ -253,7 +252,7 @@ body {
 }
 
 /* -------------------------------
-   Fotografia Images Styling (only for Fotografias images)
+   Fotografias
 ---------------------------------- */
 .Fotografias {
     width: 80%;      
@@ -267,9 +266,8 @@ body {
 }
 
 /* ------------------------------- 
-   Contact Section
+   Contactos
 ---------------------------------- */
-
 #contactos {
     margin-top: 50px;
     background-color: #a1bbd0;
@@ -279,7 +277,6 @@ body {
     font-size: 1.5rem;
 }
 
-
 /* Links */
 a {
     text-decoration: none; 
@@ -287,7 +284,7 @@ a {
 }
   
 a:hover {
-    color: #FFC0CB; /* Hover effect on links */
+    color: #FFC0CB; 
 }
 
 /* Abanar! */
@@ -313,157 +310,98 @@ a:hover {
     animation: jiggle 0.3s ease-in-out; 
 }
 
-/* ------------------------------- 
-   Mobile Styling
----------------------------------- */
-@media screen and (max-width: 768px) {
-    #contactos form {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #contactos .form-column {
-        min-width: 100%;
-    }
-
-    #contactos input, #contactos textarea {
-        width: 100%;
-    }
-}
 
 /* Animais, Filmes, e Jogos */
 #animais, #filmes, #jogos {
-    background-color: #f0f0f0; /* Light background color for the page */
-    height: 100vh; /* Full viewport height */
-    display: flex; /* Flexbox to center content */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    padding: 20px; /* Optional padding around the edges */
+    background-color: #f0f0f0; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    padding: 20px; 
 }
 
-/* Content box that holds the content in the center */
+/* Caixa de conteúdo */
 .content-box {
-    background-color: #ffffff8e; /* White background for the content box */
-    padding: 30px; /* Padding inside the box */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a 3D effect */
-    max-width: 800px; /* Limit the width of the content box */
-    width: 100%; /* Make it responsive */
-    text-align: center; /* Center the text inside the box */
+    background-color: #ffffff8e; 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    width: 100%; 
+    text-align: center; 
 }
 
-/* Heading styles */
+/* Cabeçalho */
 .content-box h2 {
-    font-size: 2.5rem; /* Font size for headings */
-    color: #000000; /* Black color for headings */
-    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5rem; 
+    color: #000000; 
+    margin-bottom: 20px; 
 }
 
-/* Paragraph styles */
+/* Parágrafo */
 .content-box p {
-    font-size: 1.2rem; /* Font size for paragraphs */
-    color: #000000; /* Black color for text */
-    line-height: 1.6; /* Line height for better readability */
+    font-size: 1.2rem; 
+    color: #000000; 
+    line-height: 1.6; 
 }
 
-/* Image container styles */
+/* Imagens */
 .content-box img {
-    margin: 10px; /* Adds space between the images */
-    border-radius: 8px; /* Optional: adds rounded corners to the images */
+    margin: 10px; 
+    border-radius: 8px; 
 }
 
-/* Responsive design for smaller screens */
+/* Mobile friendly */
 @media screen and (max-width: 768px) {
+    .side-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .side-menu {
+        flex-direction: column;
+    }
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .work-box {
+        width: 100%;
+    }
+    .hobby {
+        width: 100%;
+    }
+    #contactos {
+        padding: 100px 20px;
+    }
     .content-box {
-        padding: 20px; /* Adjust padding for smaller screens */
+        padding: 20px;
     }
-
     .content-box h2 {
-        font-size: 2rem; /* Adjust heading font size */
+        font-size: 2rem;
     }
-
     .content-box p {
-        font-size: 1rem; /* Adjust paragraph font size */
+        font-size: 1rem;
     }
-
     .content-box img {
-        width: 45%; /* Images will take up 45% of the width on small screens */
-        margin: 10px 0; /* Adds margin top and bottom */
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
-/* For medium screens, like tablets */
+/* Tablets */
 @media screen and (max-width: 1024px) {
     .content-box img {
-        width: 30%; /* Images will take up 30% of the width on medium screens */
+        width: 45%;
+    }
+    .hobby {
+        width: 45%;
     }
 }
 
-
-/* Musica, Livros, e Comida */
-#musica, #livros, #comida {
-    background-color: #f0f0f0; /* Light background color for the page */
-    height: 100vh; /* Full viewport height */
-    display: flex; /* Flexbox to center content */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    padding: 20px; /* Optional padding around the edges */
-}
-
-/* Content box that holds the content in the center */
-.content-box {
-    background-color: #ffffff8e; /* White background for the content box */
-    padding: 30px; /* Padding inside the box */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a 3D effect */
-    max-width: 800px; /* Limit the width of the content box */
-    width: 100%; /* Make it responsive */
-    text-align: center; /* Center the text inside the box */
-}
-
-/* Heading styles */
-.content-box h2 {
-    font-size: 2.5rem; /* Font size for headings */
-    color: #000000; /* Black color for headings */
-    margin-bottom: 20px; /* Space below the heading */
-}
-
-/* Paragraph styles */
-.content-box p {
-    font-size: 1.2rem; /* Font size for paragraphs */
-    color: #000000; /* Black color for text */
-    line-height: 1.6; /* Line height for better readability */
-}
-
-/* Image container styles */
-.content-box img {
-    margin: 10px; /* Adds space between the images */
-    border-radius: 8px; /* Optional: adds rounded corners to the images */
-}
-
-/* Responsive design for smaller screens */
-@media screen and (max-width: 768px) {
-    .content-box {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-
-    .content-box h2 {
-        font-size: 2rem; /* Adjust heading font size */
-    }
-
-    .content-box p {
-        font-size: 1rem; /* Adjust paragraph font size */
-    }
-
-    .content-box img {
-        width: 45%; /* Images will take up 45% of the width on small screens */
-        margin: 10px 0; /* Adds margin top and bottom */
-    }
-}
-
-/* For medium screens, like tablets */
-@media screen and (max-width: 1024px) {
-    .content-box img {
-        width: 30%; /* Images will take up 30% of the width on medium screens */
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    .hobby {
+        width: 30%;
     }
 }
