@@ -100,6 +100,11 @@ body {
 
     .side-menu .menu-toggle {
         display: block;
+        font-size: 30px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: #000;
     }
 
     /* Toggle active class to show menu */
@@ -110,9 +115,12 @@ body {
     /* Optionally adjust header padding for mobile */
     .header {
         padding-top: 100px;
+        
     }
+    .side-menu .menu-toggle.active {
+        color: #FFC0CB;
 }
-
+}
 /* ------------------------------- 
    Cabeçalho
 ---------------------------------- */
@@ -358,7 +366,7 @@ a:hover {
 
 /* Animais, Filmes, e Jogos */
 #animais, #filmes, #jogos {
-    background-color: #f0f0f0; 
+    background-color: #CCD5AE; 
     height: 100vh; 
     display: flex; 
     justify-content: center;
