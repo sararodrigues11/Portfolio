@@ -18,6 +18,6 @@ Este projeto surge em âmbito da cadeira Aplicações Web. Utilizando as língua
 
 Hugo Fonseca - Estudante do Ctesp Informática e Comunicação organizacional pela Universidade de Aveiro. Pela ajuda e conselhos prestados quando por vezes ocorreram dificuldades.
 
-Sofia Pereira - Estudante de Línguas e Estudos Editoriais pela Universidade de Aveiro. Pelas opiniões e conselhos prestados em relação ao Design.
+Sofia Pereira - Estudante da licenciatura Línguas e Estudos Editoriais pela Universidade de Aveiro. Pelas opiniões e conselhos prestados em relação ao Design.
 
 Bárbara Maurício - Licenciada em Animação Digital pela Universidade Lusófona de Lisboa. Pelas opiniões e conselhos prestados em relação ao Design.
