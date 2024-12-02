@@ -330,3 +330,71 @@ a:hover {
         width: 100%;
     }
 }
+
+/* Animais, Filmes, e Jogos */
+#animais, #filmes, #jogos {
+    background-color: #f0f0f0; /* Light background color for the page */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flexbox to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px; /* Optional padding around the edges */
+}
+
+/* Content box that holds the content in the center */
+.content-box {
+    background-color: #ffffff8e; /* White background for the content box */
+    padding: 30px; /* Padding inside the box */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a 3D effect */
+    max-width: 800px; /* Limit the width of the content box */
+    width: 100%; /* Make it responsive */
+    text-align: center; /* Center the text inside the box */
+}
+
+/* Heading styles */
+.content-box h2 {
+    font-size: 2.5rem; /* Font size for headings */
+    color: #000000; /* Black color for headings */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Paragraph styles */
+.content-box p {
+    font-size: 1.2rem; /* Font size for paragraphs */
+    color: #000000; /* Black color for text */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+/* Image container styles */
+.content-box img {
+    margin: 10px; /* Adds space between the images */
+    border-radius: 8px; /* Optional: adds rounded corners to the images */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .content-box {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .content-box h2 {
+        font-size: 2rem; /* Adjust heading font size */
+    }
+
+    .content-box p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+
+    .content-box img {
+        width: 45%; /* Images will take up 45% of the width on small screens */
+        margin: 10px 0; /* Adds margin top and bottom */
+    }
+}
+
+/* For medium screens, like tablets */
+@media screen and (max-width: 1024px) {
+    .content-box img {
+        width: 30%; /* Images will take up 30% of the width on medium screens */
+    }
+}
