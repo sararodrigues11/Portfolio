@@ -1,4 +1,4 @@
-/* ------------------------------- 
+/* -------------------------------
    Basic Reset
 ---------------------------------- */
 * {
@@ -7,26 +7,26 @@
     box-sizing: border-box;
 }
 
-/* Enable smooth scrolling globally */
+/* smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
-/* ------------------------------- 
+/* -------------------------------
    Global Styles
 ---------------------------------- */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     background-color: #CCD5AE;
-    color: #333;
-    padding-top: 60px;  /* For top padding */
+    color: #ffffff; /* Change all text color to white */
+    padding-top: 60px; 
     margin: 0;
     overflow-x: hidden;
 }
 
 /* ------------------------------- 
-   Navigation (Top Menu)
+   Navigation
 ---------------------------------- */
 .side-menu {
     position: fixed;
@@ -54,7 +54,7 @@ body {
 
 .side-menu ul li a {
     display: inline-block;
-    color: #333;
+    color: #000000; /* Change link text to white */
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -65,11 +65,11 @@ body {
 
 .side-menu ul li a:hover {
     background-color: #FFC0CB;
-    color: #fff;
+    color: #ffffff; /* Keep text white on hover */
 }
 
 /* ------------------------------- 
-   Header Section
+   Header 
 ---------------------------------- */
 .header {
     display: flex;
@@ -106,16 +106,16 @@ body {
 
 .header h1 {
     font-size: 2.5rem;
-    color: #071013;
+    color: #000000;
 }
 
 .header h3 {
     font-size: 1.2rem;
-    color: #071013;
+    color: #000000; 
 }
 
 /* ------------------------------- 
-   About Section
+   Sobre Mim
 ---------------------------------- */
 #Eu {
     background-color: #fff;
@@ -128,7 +128,7 @@ body {
 
 #Eu h2 {
     font-size: 2.5rem;
-    color: #071013;
+    color: #000000; 
     text-transform: uppercase;
     margin-bottom: 20px;
     font-weight: bold;
@@ -136,7 +136,7 @@ body {
 
 #Eu p {
     font-size: 1.2rem;
-    color: #333;
+    color: #000000; 
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
@@ -145,7 +145,7 @@ body {
 }
 
 /* ------------------------------- 
-   Hobbies Section
+   Gostos
 ---------------------------------- */
 #Gostos {
     margin-top: 50px;
@@ -159,7 +159,7 @@ body {
 
 #Gostos h2 {
     font-size: 2.5rem;
-    color: #071013;
+    color: #000000;
     padding: 10px 20px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -168,7 +168,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Hobbies Layout */
+/* Gostos Layout */
 .hobbies {
     display: flex;
     flex-wrap: wrap;
@@ -190,107 +190,127 @@ body {
 .hobby h3 {
     font-size: 1.5rem;
     margin-top: 10px;
+    color: #000000; 
 }
 
 .hobby img {
     border-radius: 10px;
 }
 
-/* ------------------------------- 
-   Work Section
+/* -------------------------------
+   Os meus trabalhos
 ---------------------------------- */
-.work {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 40px;
-    align-items: center;
-}
-
-.work-item {
+#Trabalhos {
+    margin-top: 60px;
+    padding: 40px 20px; 
     background-color: #ffffff;
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
-.work-item pre {
-    font-family: 'Courier New', monospace;
-    white-space: pre-wrap;
+#Trabalhos h2 {
+    font-size: 2rem;
+    color: #000000; /* Change title text to white */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Work Container */
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Work Box */
+.work-box {
+    background-color: #a1bbd0;
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 900px; 
+    min-width: 350px; 
+    margin: 0 auto;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.work-box h4 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(222, 221, 221, 0.1);
+}
+
+/* -------------------------------
+   Fotografia Images Styling (only for Fotografias images)
+---------------------------------- */
+.Fotografias {
+    width: 80%;      
+    margin-right: 10px;           
+    margin-bottom: 10px;            
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    display: block;                 
+    margin-left: auto;              
+    margin-right: auto;              
+    text-align: center;             
 }
 
 /* ------------------------------- 
    Contact Section
 ---------------------------------- */
+
 #contactos {
     margin-top: 50px;
     background-color: #a1bbd0;
-    padding: 30px;
+    padding: 300px;
     border-radius: 10px;
+    color: #000000;
+    font-size: 1.5rem;
 }
 
-#contactos form {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+
+/* Links */
+a {
+    text-decoration: none; 
+    color: #000000;
+}
+  
+a:hover {
+    color: #FFC0CB; /* Hover effect on links */
 }
 
-#contactos label {
-    margin: 10px 0;
-    font-size: 1rem;
-    font-weight: bold;
+/* Abanar! */
+@keyframes jiggle {
+    0% {
+        transform: rotate(0deg); 
+    }
+    25% {
+        transform: rotate(5deg); 
+    }
+    50% {
+        transform: rotate(-5deg); 
+    }
+    75% {
+        transform: rotate(3deg); 
+    }
+    100% {
+        transform: rotate(0deg); 
+    }
 }
-
-#contactos input, #contactos textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    width: 100%;
-}
-
-/* Create 3 equal columns */
-#contactos .form-column {
-    flex: 1;
-    min-width: 30%;
-    display: flex;
-    flex-direction: column;
-}
-
-#contactos textarea {
-    resize: vertical;
-    height: 100px;
-}
-
-/* ------------------------------- 
-   Hobby Input Transition
----------------------------------- */
-
-.hobby-input {
-    display: none; 
-    overflow: hidden; 
-    max-height: 0;
-    transition: max-height 0.3s ease-out; 
-}
-
-.hobby-input.show {
-    display: block; 
-    max-height: 200px;  /* Adjust the max-height value as needed */
-}
-
-/* Styling for the textarea inside the hobby input */
-.hobby-input textarea {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin-top: 10px;
+  
+.hobby:hover {
+    animation: jiggle 0.3s ease-in-out; 
 }
 
 /* ------------------------------- 
