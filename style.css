@@ -1,45 +1,55 @@
-/* Basic Reset */
+/* ------------------------------- 
+   Basic Reset
+---------------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+/* Enable smooth scrolling globally */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------- 
+   Global Styles
+---------------------------------- */
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-    background-color: #9AC4F8;
+    background-color: #CCD5AE;
     color: #333;
-    padding: 0;
+    padding-top: 60px;  /* For top padding */
     margin: 0;
-    overflow-x: hidden;  /* Prevent horizontal scrolling */
-    padding-top: 60px;  /* Make space for the top menu */
+    overflow-x: hidden;
 }
 
-/* Navigation (Top Menu) */
+/* ------------------------------- 
+   Navigation (Top Menu)
+---------------------------------- */
 .side-menu {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;  /* Make the menu span across the top */
-    height: 60px;  /* Adjust the height as needed */
-    background-color: #FFC0CB;
-    padding: 10px 20px;  /* Add some padding */
+    width: 100%;
+    height: 60px; 
+    background-color: #ffffff8e;
+    padding: 10px 20px; 
     font-family: 'Parkinsans', sans-serif;
-    z-index: 10;  /* Keeps the menu on top */
+    z-index: 10;
     display: flex;
-    justify-content: space-around;  /* Distribute items evenly across the top */
+    justify-content: space-around; 
     align-items: center;
 }
 
 .side-menu ul {
     display: flex;
     list-style: none;
-    padding-left: 0;
-    justify-content: space-around;  /* Space out the items horizontally */
+    justify-content: space-around;
     width: 100%;
     margin: 0;
+    padding: 0;
 }
 
 .side-menu ul li a {
@@ -54,28 +64,44 @@ body {
 }
 
 .side-menu ul li a:hover {
-    background-color: #FF1493;
+    background-color: #FFC0CB;
     color: #fff;
 }
 
-/* Header Section */
+/* ------------------------------- 
+   Header Section
+---------------------------------- */
 .header {
     display: flex;
     align-items: center;
-    background-color: #CCD5AE;
+    background-color: #a1bbd0;
     width: 100%;
     height: 100vh;
-    flex-direction: column;  /* Align vertically */
-    justify-content: center; /* Center content vertically */
-    text-align: center;  /* Center text horizontally */
+    justify-content: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.picture {
+    margin-right: 20px;
+}
+
+.picture img {
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
 }
 
 .intro {
-    padding-top: 0;
-    padding-left: 0;
-    text-shadow: 2px 2px 2px rgba(167, 162, 162, 0.534);
-    max-width: 600px; /* Limit width for readability */
-    margin: 0 auto; /* Center content horizontally */
+    text-align: left;
+    max-width: 600px;
+}
+
+.header > .picture {
+    order: 1;
+}
+
+.header > .intro {
+    order: 2;
 }
 
 .header h1 {
@@ -88,37 +114,67 @@ body {
     color: #071013;
 }
 
-/* Picture styling */
-.picture img {
-    border-radius: 15px;
-    width: 100%; 
-    max-width: 1000px;  
-    height: auto; 
-    padding-right: 50px; 
+/* ------------------------------- 
+   About Section
+---------------------------------- */
+#Eu {
+    background-color: #fff;
+    padding: 50px 20px;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* About Section */
+#Eu h2 {
+    font-size: 2.5rem;
+    color: #071013;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#Eu p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* ------------------------------- 
+   Hobbies Section
+---------------------------------- */
 #Gostos {
     margin-top: 50px;
     text-align: center;
     padding-right: 50px;
     padding-left: 50px;
-    max-width: 1000px;  /* Limit the width of the section */
-    margin: 0 auto;  /* Center the section */
+    padding-top: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 #Gostos h2 {
     font-size: 2.5rem;
     color: #071013;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-/* Hobbies Section */
+/* Hobbies Layout */
 .hobbies {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
-    justify-content: center; /* Center the hobby items */
+    justify-content: center;
 }
 
 .hobby {
@@ -127,8 +183,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 30%;
-    max-width: 300px; /* Limit width for better layout */
-    margin: 0 auto; /* Center each hobby item */
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .hobby h3 {
@@ -140,13 +196,15 @@ body {
     border-radius: 10px;
 }
 
-/* Work Section */
+/* ------------------------------- 
+   Work Section
+---------------------------------- */
 .work {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-top: 40px;
-    align-items: center; /* Center the work items */
+    align-items: center;
 }
 
 .work-item {
@@ -154,8 +212,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 900px;  /* Limit the width */
-    width: 100%;  /* Take full width inside the container */
+    max-width: 900px;
+    width: 100%;
 }
 
 .work-item pre {
@@ -163,19 +221,21 @@ body {
     white-space: pre-wrap;
 }
 
-/* Contact Section */
+/* ------------------------------- 
+   Contact Section
+---------------------------------- */
 #contactos {
     margin-top: 50px;
-    background-color: #CCD5AE;
+    background-color: #a1bbd0;
     padding: 30px;
     border-radius: 10px;
 }
 
 #contactos form {
     display: flex;
-    justify-content: space-between; /* Distribute the items horizontally */
-    flex-wrap: wrap; /* Allow items to wrap if necessary */
-    gap: 20px; /* Space between columns */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 #contactos label {
@@ -190,34 +250,63 @@ body {
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 1rem;
-    width: 100%; /* Ensure inputs take full width of their container */
+    width: 100%;
 }
 
 /* Create 3 equal columns */
 #contactos .form-column {
     flex: 1;
-    min-width: 30%; /* Each column should take up 30% of the form's width */
+    min-width: 30%;
     display: flex;
-    flex-direction: column; /* Stack label and input vertically */
+    flex-direction: column;
 }
 
 #contactos textarea {
-    resize: vertical; /* Allow the textarea to resize vertically */
-    height: 100px; /* Set a default height for the textarea */
+    resize: vertical;
+    height: 100px;
 }
 
-/* Mobile Styling */
+/* ------------------------------- 
+   Hobby Input Transition
+---------------------------------- */
+
+.hobby-input {
+    display: none; 
+    overflow: hidden; 
+    max-height: 0;
+    transition: max-height 0.3s ease-out; 
+}
+
+.hobby-input.show {
+    display: block; 
+    max-height: 200px;  /* Adjust the max-height value as needed */
+}
+
+/* Styling for the textarea inside the hobby input */
+.hobby-input textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* ------------------------------- 
+   Mobile Styling
+---------------------------------- */
 @media screen and (max-width: 768px) {
     #contactos form {
-        flex-direction: column; /* Stack columns vertically on smaller screens */
-        align-items: center; /* Center form items on smaller screens */
+        flex-direction: column;
+        align-items: center;
     }
 
     #contactos .form-column {
-        min-width: 100%; /* Make each column take full width on smaller screens */
+        min-width: 100%;
     }
 
     #contactos input, #contactos textarea {
-        width: 100%; /* Ensure inputs take full width of their container */
+        width: 100%;
     }
 }
