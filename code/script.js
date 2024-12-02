@@ -22,3 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Get the menu toggle button and the side menu
+const menuToggle = document.getElementById('menuToggle');
+const sideMenu = document.querySelector('.side-menu');
+
+// Add click event listener to toggle the visibility of the menu
+menuToggle.addEventListener('click', () => {
+    // Toggle the 'active' class on the side-menu
+    sideMenu.classList.toggle('active');
+});

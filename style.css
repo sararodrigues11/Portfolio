@@ -68,6 +68,51 @@ body {
     color: #ffffff; 
 }
 
+/* -------------------------------
+   Mobile Menu */
+   .side-menu .menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.side-menu .menu-toggle.active {
+    color: #FFC0CB;
+}
+
+/* -------------------------------
+   Media Query: Mobile */
+@media screen and (max-width: 768px) {
+    .side-menu ul {
+        flex-direction: column;
+        align-items: center;
+        display: none; /* Hide the menu links by default */
+        width: 100%;
+    }
+
+    .side-menu ul li a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .side-menu .menu-toggle {
+        display: block;
+    }
+
+    /* Toggle active class to show menu */
+    .side-menu.active ul {
+        display: flex;
+    }
+
+    /* Optionally adjust header padding for mobile */
+    .header {
+        padding-top: 100px;
+    }
+}
+
 /* ------------------------------- 
    Cabeçalho
 ---------------------------------- */
